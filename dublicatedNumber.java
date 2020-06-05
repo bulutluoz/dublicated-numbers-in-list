@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class dublicatedNumber {							// kullanıcıdan liste uzunluğunu ve lementleri alıp
-														// listede double olanları ve 2 den fazla kullanılanları bulup listeler
+public class dublicatedNumber {							// kullanÃ½cÃ½dan liste uzunluÃ°unu ve lementleri alÃ½p
+							// listede double olanlarÃ½ ve 2 den fazla kullanÃ½lanlarÃ½ bulup listeler
 	static List<Integer> userList = new ArrayList<Integer>();
 	static int flag=0 ;
 	static int num =0;
@@ -16,7 +16,7 @@ public class dublicatedNumber {							// kullanıcıdan liste uzunluğunu ve lement
 	static boolean control=false ;
 	
 	
-	public static void main(String[] args) {				// kullanıcıdan listenin uzunluğunu ve elementlerini alan blok
+	public static void main(String[] args) {				// kullanÃ½cÃ½dan listenin uzunluÃ°unu ve elementlerini alan blok
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the number of elements");
 		int length= scan.nextInt();
@@ -27,12 +27,12 @@ public class dublicatedNumber {							// kullanıcıdan liste uzunluğunu ve lement
 		for(int i=0 ; i<length ; i++) {
 			userList.add(scan.nextInt());
 		}
-		System.out.println(userList);						// kullanıcıdan listenin uzunluğunu ve elementlerini alan blok
+		System.out.println(userList);						// kullanÃ½cÃ½dan listenin uzunluÃ°unu ve elementlerini alan blok
 		
 
 		
-		while(num<length) {									// while bloğu önce dublicate methoduna yollar oradan bir sayının 
-			dublicate(userList.get(num),length);			// kaç kez tekrar ettiğini tespit edip flag a yükleyip döner
+		while(num<length) {									// while bloÃ°u Ã¶nce dublicate methoduna yollar oradan bir sayÃ½nÃ½n 
+			dublicate(userList.get(num),length);			// kaÃ§ kez tekrar ettiÃ°ini tespit edip flag a yÃ¼kleyip dÃ¶ner
 			if(flag==2) {
 				control=true;
 				addDouble(userList.get(num));
@@ -51,13 +51,13 @@ public class dublicatedNumber {							// kullanıcıdan liste uzunluğunu ve lement
 			} 
 			
 			num++;
-		}													//	while bloğu												
+		}													//	while bloÃ°u												
 		
 		System.out.println("Double number in your list  : " + doubleList);
 		System.out.println("Number used more than two  : " + multipleList);
 	}															// main metot sonu
 	
-	public static int dublicate(int num2,int length2) {		// dublicate bloğu
+	public static int dublicate(int num2,int length2) {		// dublicate bloÃ°u
 		
 		flag=0;
 		for(int i=0 ; i<length2 ; i++) {
@@ -68,10 +68,10 @@ public class dublicatedNumber {							// kullanıcıdan liste uzunluğunu ve lement
 		return(flag);
 		
 	
-	}														// dublicate bloğu
+	}														// dublicate bloÃ°u
 	
-	public static boolean addDouble (int num3) {			// addDouble... sayının double olduğuna karar verilince buraya gelir
-															// sayının daha önce doubleListte olup olmadığını kontrol eder
+	public static boolean addDouble (int num3) {			// addDouble... sayÃ½nÃ½n double olduÃ°una karar verilince buraya gelir
+															// sayÃ½nÃ½n daha Ã¶nce doubleListte olup olmadÃ½Ã°Ã½nÃ½ kontrol eder
 		if (doubleList.contains(userList.get(num))) {
 			control=false;
 		}
