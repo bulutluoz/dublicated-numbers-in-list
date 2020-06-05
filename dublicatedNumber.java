@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class dublicatedNumber {							// kullanýcýdan liste uzunluðunu ve lementleri alýp
+public class dublicatedNumber {				// kullanýcýdan liste uzunluðunu ve lementleri alýp
 							// listede double olanlarý ve 2 den fazla kullanýlanlarý bulup listeler
 	static List<Integer> userList = new ArrayList<Integer>();
 	static int flag=0 ;
